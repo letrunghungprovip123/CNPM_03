@@ -6,5 +6,8 @@ public class Test {
         System.out.println(p1.toString());
         System.out.println(st.toString());
         System.out.println(e.toString());
+        Teacher t1 = new Teacher("Jane", 30, 170, 60, "Computer Science", 1234);
+        System.out.println(p1.toString());
+        System.out.println(t1.toString());
     }
 }
