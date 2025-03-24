@@ -108,6 +108,12 @@ public class Recursive {
         return n * recurD4(n - 1, r + 1);
     }
 
+    public static int coutDigit(int i, int count) {
+        if (i == 0)
+            return count;
+        return coutDigit(i / 10, count + 1);
+    }
+
     public static void main(String[] args) {
         // System.out.println(iterFactorial(5));
         // System.out.println(recursiveFactorial(5));
