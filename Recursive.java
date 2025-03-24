@@ -10,6 +10,14 @@ public class Recursive {
         return s;
     }
 
+    public void printArr(int[] arr, int n) {
+        if (n >= arr.length) {
+            return;
+        }
+        printArr(arr, n - 1);
+        System.out.println(arr[n - 1]);
+    }
+
     public static int recursiveFactorial(int n) {
         return n == 1 ? 1 : n * iterFactorial(n - 1);
     }
